@@ -30,25 +30,25 @@ class PhotoViewController: UIViewController {
             image.image = UIImage(data: data)
         }
         if ((self.photo.isLiked) != nil) {
-            likeButton.image = UIImage(named: "like.png")
-        } else {
             likeButton.image = UIImage(named: "dislike.png")
+        } else {
+            likeButton.image = UIImage(named: "like.png")
         }
         likeButton.userInteractionEnabled = true
         let tapGesture = UITapGestureRecognizer(target: self, action: Selector("likeSelector"))
-        tapGesture.numberOfTapsRequired = 1
+        //tapGesture.numberOfTapsRequired = 1
         likeButton.addGestureRecognizer(tapGesture)
     }
     
     func likeSelector() {
         if ((photo.isLiked) != nil) {
-            likeButton.image = UIImage(named: "dislike.png")
-            numLikes.text = String(self.photo.likes)
-            photo.isLiked = false
-        } else {
             likeButton.image = UIImage(named: "like.png")
             numLikes.text = String(self.photo.likes + 1)
             photo.isLiked = true
+        } else {
+            likeButton.image = UIImage(named: "dislike.png")
+            numLikes.text = String(self.photo.likes)
+            photo.isLiked = false
         }
     }
 

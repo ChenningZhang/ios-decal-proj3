@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Photos Collection View Controller-->
@@ -101,8 +102,8 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K4l-MS-uH6">
-                                <rect key="frame" x="80" y="84" width="46" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K4l-MS-uH6">
+                                <rect key="frame" x="50" y="84" width="34" height="30"/>
                                 <state key="normal" title="Back"/>
                                 <connections>
                                     <segue destination="PRF-dc-EQw" kind="push" id="2UW-9N-Oan"/>
@@ -116,7 +117,7 @@
                             <constraint firstItem="crC-qs-n3N" firstAttribute="top" secondItem="lp3-W1-J4I" secondAttribute="bottom" constant="8" id="589-6Y-MSI"/>
                             <constraint firstItem="crC-qs-n3N" firstAttribute="leading" secondItem="lp3-W1-J4I" secondAttribute="leading" id="5Pt-jR-iCN"/>
                             <constraint firstItem="90y-5n-un1" firstAttribute="top" secondItem="Udq-cR-V82" secondAttribute="bottom" constant="209" id="6EI-Gw-znW"/>
-                            <constraint firstItem="K4l-MS-uH6" firstAttribute="leading" secondItem="90y-5n-un1" secondAttribute="leading" constant="-100" id="9t7-ht-h2d"/>
+                            <constraint firstItem="K4l-MS-uH6" firstAttribute="leading" secondItem="90y-5n-un1" secondAttribute="leading" priority="1" constant="-100" id="9t7-ht-h2d"/>
                             <constraint firstItem="lp3-W1-J4I" firstAttribute="top" secondItem="nA9-OE-RtT" secondAttribute="bottom" constant="10" id="GiY-OB-VGR"/>
                             <constraint firstItem="OsX-G5-U1f" firstAttribute="leading" secondItem="XmQ-6q-zoC" secondAttribute="leading" id="HBH-Gz-UNZ"/>
                             <constraint firstItem="90y-5n-un1" firstAttribute="top" secondItem="K4l-MS-uH6" secondAttribute="bottom" constant="115" id="HIP-Sl-30W"/>
@@ -126,6 +127,7 @@
                             <constraint firstItem="XmQ-6q-zoC" firstAttribute="leading" secondItem="nA9-OE-RtT" secondAttribute="trailing" constant="10" id="XS5-iQ-mCc"/>
                             <constraint firstItem="XmQ-6q-zoC" firstAttribute="top" secondItem="nA9-OE-RtT" secondAttribute="top" id="ZTq-TW-5Y7"/>
                             <constraint firstItem="LyT-9l-Oik" firstAttribute="leading" secondItem="OsX-G5-U1f" secondAttribute="leading" id="av0-4o-dMw"/>
+                            <constraint firstItem="K4l-MS-uH6" firstAttribute="leading" secondItem="RP9-G4-exB" secondAttribute="leadingMargin" constant="30" id="nqG-jg-eyr"/>
                             <constraint firstItem="F9z-Ws-BCx" firstAttribute="top" secondItem="crC-qs-n3N" secondAttribute="bottom" constant="92" id="pCO-bm-x4R"/>
                             <constraint firstItem="nA9-OE-RtT" firstAttribute="top" secondItem="90y-5n-un1" secondAttribute="bottom" constant="42" id="qnF-b2-fsa"/>
                             <constraint firstItem="90y-5n-un1" firstAttribute="centerX" secondItem="RP9-G4-exB" secondAttribute="centerX" id="xZd-dm-h9c"/>
