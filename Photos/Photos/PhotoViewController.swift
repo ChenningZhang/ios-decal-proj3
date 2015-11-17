@@ -11,6 +11,7 @@ import UIKit
 class PhotoViewController: UIViewController {
 
     var photo: Photo!
+    
     @IBOutlet weak var image: UIImageView!
     @IBOutlet weak var posterName: UILabel!
     @IBOutlet weak var date: UILabel!

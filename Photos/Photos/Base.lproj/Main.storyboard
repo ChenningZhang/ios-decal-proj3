@@ -134,9 +134,9 @@
                     <navigationItem key="navigationItem" id="nYy-UE-yJx"/>
                     <connections>
                         <outlet property="date" destination="OsX-G5-U1f" id="rz2-hr-eje"/>
+                        <outlet property="image" destination="90y-5n-un1" id="qYr-l3-0WU"/>
                         <outlet property="likeButton" destination="crC-qs-n3N" id="RKC-eQ-WmM"/>
                         <outlet property="numLikes" destination="LyT-9l-Oik" id="x0C-cQ-cKO"/>
-                        <outlet property="photo" destination="90y-5n-un1" id="qJO-AD-EiI"/>
                         <outlet property="posterName" destination="XmQ-6q-zoC" id="vqO-0s-ZVq"/>
                     </connections>
                 </viewController>
